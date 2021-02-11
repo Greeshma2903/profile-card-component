@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+/* primary colours */
+--Dark-cyan: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue: hsl(229, 23%, 47%);
+--Dark-grayish-blue: hsl(227, 10%, 46%);
+--Dark-gray: hsl(0, 0%, 59%);
+/* font-settings */
+--ff-family: "Kumbh Sans", sans-serif;
+--ff-size: 18px;
+}
+
+*,
+::before,
+::after {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Dark-cyan) ;
+    font-family: var(--ff-family);
+    font-size: var(--ff-size);
+}
+/* backgrounds */
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 24vh 0 24vh; */
+    background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -12rem -33rem,  49rem 19rem;
+
+}
+/*// CARD //*/
+.card {
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 0px 2rem var(--Dark-grayish-blue);
+    /* margin: 0 auto 0; */
+    max-width: 22vw;
+    min-width: 300px;
+    position: relative;
+}
+
+.card-bg img{
+    border-radius: 8px 8px 0px 0px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.profile-img{
+    position: absolute;
+    top: 70px;
+    left: 33%;
+}
+.profile-img img{
+    border: 6px solid #fff;
+    border-radius: 100%;
+        /* centering image */
+    display: block;  
+    margin: 0 auto;
+}
+
+.card-name{
+    padding: 4rem 0 1rem;
+    text-align: center;
+}
+.card-name span{
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
+.card-name p{
+    font-size: 16px;
+    line-height: 2;
+    color: var(--Dark-gray);
+}
+
+hr{
+    border: none;
+    border-top: 1px solid lightgray;
+}
+
+.stats{
+    padding: 1.2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.stats p{
+    color: var(--Dark-gray);
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 2px;
+}
